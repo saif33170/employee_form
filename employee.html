@@ -1,0 +1,736 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Employee Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/employee.html"><strong><span class="text-warning">Emp</span> Form</strong></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/employee.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/employee.html">About</a>
+                    </li>
+                    <li class="nav-item"></li>
+                    <a class="nav-link active" href="/employee.html">Employee</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/employee.html">Contact us</a>
+                    </li>
+                </ul>
+
+                <form class="d-flex" role="login">
+                    <button class="btn btn-outline-warning btn-sm" type="submit"><strong>Login</strong></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- employee form -->
+    <section class="gradient-custom">
+        <div class="container py-5 h-100">
+            <div class="row justify-content-center align-items-center h-100">
+                <div class="col-12 col-lg-9 col-xl-7">
+                    <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
+                        <div class="card-body p-4 p-md-5">
+                            <h3 class="mb-4 pb-2 pb-md-0 mb-md-5 d-flex justify-content-around">Employee Information
+                            </h3>
+                            <span class="d-flex justify-content-center mb-4 lead"><strong>Personal
+                                    Details</strong></span>
+                            <form>
+
+                                <div class="row">
+                                    <div class="col-md-6 mb-4">
+
+                                        <!-- PERSONAL INFORMATION -->
+                                        <div class="form-outline">
+                                            <input type="text" id="firstName" class="form-control form-control-lg" />
+                                            <label class="form-label" for="firstName">First Name</label>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+
+                                        <div class="form-outline">
+                                            <input type="text" id="lastName" class="form-control form-control-lg" />
+                                            <label class="form-label" for="lastName">Last Name</label>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+
+                                        <div class="form-outline">
+                                            <input type="text" id="firstName" class="form-control form-control-lg" />
+                                            <label class="form-label" for="firstName">Father's Name</label>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+
+                                        <div class="form-outline">
+                                            <input type="text" id="lastName" class="form-control form-control-lg" />
+                                            <label class="form-label" for="lastName">Mother's Name</label>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-md-6 mb-4">
+
+                                        <div class="form-outline">
+                                            <input type="text" id="firstName" class="form-control form-control-lg" />
+                                            <label class="form-label" for="firstName">Nationality</label>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-6 mb-4 d-flex justify-content-evenly">
+                                        <div class="form-outline">
+                                            <select class="select">
+                                                <option value="1">Religion</option>
+                                                <option value="2">Islam</option>
+                                                <option value="3">Christianity</option>
+                                                <option value="4">Hinduism</option>
+                                                <option value="5">Buddhism</option>
+                                                <option value="6">Other</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="form-outline">
+                                            <select class="select">
+                                                <option value="1">Marital status</option>
+                                                <option value="2">Married</option>
+                                                <option value="3">Unmarried</option>
+                                                <option value="3">Divorced</option>
+                                            </select>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6 mb-4 d-flex align-items-center">
+
+                                        <div class="form-outline datepicker w-100">
+                                            <input type="date" class="form-control form-control-lg" id="birthdayDate" />
+                                            <label for="birthdayDate" class="form-label">Date Of Birth</label>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+
+                                        <h6 class="mb-2 pb-1">Gender: </h6>
+
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="femaleGender" value="option1" />
+                                            <label class="form-check-label" for="femaleGender">Male</label>
+                                        </div>
+
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="maleGender" value="option2" />
+                                            <label class="form-check-label" for="maleGender">Female</label>
+                                        </div>
+
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="otherGender" value="option3" />
+                                            <label class="form-check-label" for="otherGender">Other</label>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6 mb-4 pb-2">
+
+                                        <div class="form-outline">
+                                            <input type="email" id="emailAddress"
+                                                class="form-control form-control-lg" />
+                                            <label class="form-label" for="emailAddress">Email</label>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-2 mb-4 pb-2">
+
+                                        <div class="form-outline">
+                                            <input type="tel" id="phoneNumber" class="form-control form-control-lg"
+                                                placeholder="+880" readonly />
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-4 mb-4 pb-2">
+
+                                        <div class="form-outline">
+                                            <input type="tel" id="phoneNumber" class="form-control form-control-lg" />
+                                            <label class="form-label" for="phoneNumber">Mobile Number</label>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-md-2 mb-4">
+
+                                        <div class="form-outline">
+                                            <select class="select">
+                                                <option value="1">Select</option>
+                                                <option value="2">NID</option>
+                                                <option value="3">Passport</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 mb-4">
+                                        <div class="form-outline">
+                                            <input type="text" id="firstName" class="form-control form-control-lg" />
+                                            <label class="form-label" for="firstName">NID/ Passport Number</label>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-md-4 mb-4">
+
+                                        <div class="form-outline">
+                                            <select class="select">
+                                                <option value="1">Blood Group</option>
+                                                <option value="2">A+</option>
+                                                <option value="3">O+</option>
+                                                <option value="4">B+</option>
+                                                <option value="5">AB+</option>
+                                                <option value="6">A-</option>
+                                                <option value="7">O-</option>
+                                                <option value="8">B-</option>
+                                                <option value="9">AB-</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-12">
+
+                                        <div class="form-outline mb-4">
+                                            <input type="text" id="form3Example8"
+                                                class="form-control form-control-lg" />
+                                            <label class="form-label" for="form3Example8">Permanent Address</label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+
+                                        <div class="form-outline mb-4">
+                                            <input type="text" id="form3Example8"
+                                                class="form-control form-control-lg" />
+                                            <label class="form-label" for="form3Example8">Present Address</label>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <!--UPLOAD IMAGE-->
+                                <div class="col-md-6 mb-4 pb-2">
+
+                                    <input class="form-control form-control-lg" id="formFileLg" type="file" />
+                                    <div class="small text-muted mt-2">Upload passport size photo. Max file
+                                        size 5 MB
+                                    </div>
+
+                                </div>
+
+
+
+                                <span class="d-flex justify-content-center mb-4 lead"><strong>Knowledge and Skill
+                                        Area</strong></span>
+
+                                <!-- SKILLS -->
+
+                                <div class="row">
+                                    <div class="col12 mb-4">
+                                        <h6 class="mb-2 pb-1">Skills: </h6>
+
+                                        <!--Check-box ROW 01-->
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions"
+                                                id="femaleGender" value="option1" />
+                                            <label class="form-check-label" for="femaleGender">HTML</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions"
+                                                id="maleGender" value="option2" />
+                                            <label class="form-check-label" for="maleGender">CSS</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions"
+                                                id="otherGender" value="option3" />
+                                            <label class="form-check-label" for="otherGender">Javascript</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions"
+                                                id="femaleGender" value="option1" />
+                                            <label class="form-check-label" for="femaleGender">PHP</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions"
+                                                id="maleGender" value="option2" />
+                                            <label class="form-check-label" for="maleGender">C#</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions"
+                                                id="maleGender" value="option2" />
+                                            <label class="form-check-label" for="maleGender">Java</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions"
+                                                id="otherGender" value="option3" />
+                                            <label class="form-check-label" for="otherGender">Python</label>
+                                        </div>
+                                    </div>
+
+                                    <!--Check-box ROW 02-->
+                                    <div class="col-12 mb-4">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions"
+                                                id="femaleGender" value="option1" />
+                                            <label class="form-check-label" for="femaleGender">React</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions"
+                                                id="maleGender" value="option2" />
+                                            <label class="form-check-label" for="maleGender">Angular</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions"
+                                                id="otherGender" value="option3" />
+                                            <label class="form-check-label" for="otherGender">Vue.js</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions"
+                                                id="femaleGender" value="option1" />
+                                            <label class="form-check-label" for="femaleGender">MongoDB</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions"
+                                                id="maleGender" value="option2" />
+                                            <label class="form-check-label" for="maleGender">MySQL</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions"
+                                                id="otherGender" value="option3" />
+                                            <label class="form-check-label" for="otherGender">Node.js</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- SOFTWARE -->
+
+                                <div class="row">
+                                    <div class="col12 mb-4">
+                                        <h6 class="mb-2 pb-1">Software: </h6>
+
+                                        <!--Check-box ROW 01-->
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions"
+                                                id="femaleGender" value="option1" />
+                                            <label class="form-check-label" for="femaleGender">Illustrator</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions"
+                                                id="maleGender" value="option2" />
+                                            <label class="form-check-label" for="maleGender">Photoshop</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions"
+                                                id="otherGender" value="option3" />
+                                            <label class="form-check-label" for="otherGender">Indesign</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions"
+                                                id="femaleGender" value="option1" />
+                                            <label class="form-check-label" for="femaleGender">Figma</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions"
+                                                id="maleGender" value="option2" />
+                                            <label class="form-check-label" for="maleGender">Adobe XD</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions"
+                                                id="maleGender" value="option2" />
+                                            <label class="form-check-label" for="maleGender">Blender</label>
+                                        </div>
+                                    </div>
+
+                                    <!--Check-box ROW 02-->
+                                    <div class="col-12 mb-4">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions"
+                                                id="otherGender" value="option3" />
+                                            <label class="form-check-label" for="otherGender">Fusion 360</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions"
+                                                id="otherGender" value="option3" />
+                                            <label class="form-check-label" for="otherGender">InVision</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions"
+                                                id="otherGender" value="option3" />
+                                            <label class="form-check-label" for="otherGender">Inkscape</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions"
+                                                id="otherGender" value="option3" />
+                                            <label class="form-check-label" for="otherGender">Premiere pro</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" name="inlineRadioOptions"
+                                                id="otherGender" value="option3" />
+                                            <label class="form-check-label" for="otherGender">After effects</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!--EDUCATION-->
+                                <div class="row">
+                                    <span
+                                        class="d-flex justify-content-center lead mb-4"><strong>Education</strong></span>
+
+                                    <span class="col-6 d-flex justify-content-end">School/ College </span>
+                                    <div class="col-6 form-outline mb-4 pb-2">
+                                        <select class="select">
+                                            <option value="1">Medium</option>
+                                            <option value="2">Bangla</option>
+                                            <option value="3">English</option>
+                                        </select>
+                                    </div>
+
+                                    <!--01-->
+                                    <div class="form-outline mb-4 pb-2">
+                                        <select class="select">
+                                            <option value="1">Degree</option>
+                                            <option value="2">Post-graduate</option>
+                                            <option value="3">Under-graduate</option>
+                                            <option value="4">HSC/ A Level</option>
+                                            <option value="4">SSC/ O Level</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6 mb-4 pb-2">
+
+                                        <div class="form-outline">
+                                            <input type="email" id="emailAddress"
+                                                class="form-control form-control-lg" />
+                                            <label class="form-label" for="emailAddress">Institution Name</label>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-4 mb-4 pb-2">
+
+                                        <div class="form-outline">
+                                            <input type="tel" id="phoneNumber" class="form-control form-control-lg" />
+                                            <label class="form-label" for="phoneNumber">Group/ Department</label>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-2 mb-4 pb-2">
+
+                                        <div class="form-outline">
+                                            <input type="tel" id="phoneNumber" class="form-control form-control-lg" />
+                                            <label class="form-label" for="phoneNumber">Grade/ Division</label>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-6 mb-4 pb-2">
+
+                                        <input class="form-control form-control-lg" id="formFileLg" type="file" />
+                                        <div class="small text-muted mt-2">Upload your Certificate. File format: PDF or
+                                            JPG
+                                            Max file size 5 MB
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                                <!--02-->
+                                <div class="row">
+                                    <div class="form-outline mb-4 pb-2">
+                                        <select class="select">
+                                            <option value="1">Degree</option>
+                                            <option value="2">Post-graduate</option>
+                                            <option value="3">Under-graduate</option>
+                                            <option value="4">HSC/ A Level</option>
+                                            <option value="4">SSC/ O Level</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6 mb-4 pb-2">
+
+                                        <div class="form-outline">
+                                            <input type="email" id="emailAddress"
+                                                class="form-control form-control-lg" />
+                                            <label class="form-label" for="emailAddress">Institution Name</label>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-4 mb-4 pb-2">
+
+                                        <div class="form-outline">
+                                            <input type="tel" id="phoneNumber" class="form-control form-control-lg" />
+                                            <label class="form-label" for="phoneNumber">Group/ Department</label>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-2 mb-4 pb-2">
+
+                                        <div class="form-outline">
+                                            <input type="tel" id="phoneNumber" class="form-control form-control-lg" />
+                                            <label class="form-label" for="phoneNumber">Grade/ Division</label>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-6 mb-4 pb-2">
+
+                                        <input class="form-control form-control-lg" id="formFileLg" type="file" />
+                                        <div class="small text-muted mt-2">Upload your Certificate. File format: PDF or
+                                            JPG
+                                            Max file size 5 MB
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                                <!--03-->
+                                <div class="row">
+                                    <div class="form-outline mb-4 pb-2">
+                                        <select class="select">
+                                            <option value="1">Degree</option>
+                                            <option value="2">Post-graduate</option>
+                                            <option value="3">Under-graduate</option>
+                                            <option value="4">HSC/ A Level</option>
+                                            <option value="4">SSC/ O Level</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6 mb-4 pb-2">
+
+                                        <div class="form-outline">
+                                            <input type="email" id="emailAddress"
+                                                class="form-control form-control-lg" />
+                                            <label class="form-label" for="emailAddress">Institution Name</label>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-4 mb-4 pb-2">
+
+                                        <div class="form-outline">
+                                            <input type="tel" id="phoneNumber" class="form-control form-control-lg" />
+                                            <label class="form-label" for="phoneNumber">Group/ Department</label>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-2 mb-4 pb-2">
+
+                                        <div class="form-outline">
+                                            <input type="tel" id="phoneNumber" class="form-control form-control-lg" />
+                                            <label class="form-label" for="phoneNumber">Grade/ Division</label>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-6 mb-4 pb-2">
+
+                                        <input class="form-control form-control-lg" id="formFileLg" type="file" />
+                                        <div class="small text-muted mt-2">Upload your Certificate. File format: PDF or
+                                            JPG
+                                            Max file size 5 MB
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                                <!--04-->
+                                <div class="row">
+                                    <div class="form-outline mb-4 pb-2">
+                                        <select class="select">
+                                            <option value="1">Degree</option>
+                                            <option value="2">Post-graduate</option>
+                                            <option value="3">Under-graduate</option>
+                                            <option value="4">HSC/ A Level</option>
+                                            <option value="4">SSC/ O Level</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6 mb-4 pb-2">
+
+                                        <div class="form-outline">
+                                            <input type="email" id="emailAddress"
+                                                class="form-control form-control-lg" />
+                                            <label class="form-label" for="emailAddress">Institution Name</label>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-4 mb-4 pb-2">
+
+                                        <div class="form-outline">
+                                            <input type="tel" id="phoneNumber" class="form-control form-control-lg" />
+                                            <label class="form-label" for="phoneNumber">Group/ Department</label>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-2 mb-4 pb-2">
+
+                                        <div class="form-outline">
+                                            <input type="tel" id="phoneNumber" class="form-control form-control-lg" />
+                                            <label class="form-label" for="phoneNumber">Grade/ Division</label>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-6 mb-4 pb-2">
+
+                                        <input class="form-control form-control-lg" id="formFileLg" type="file" />
+                                        <div class="small text-muted mt-2">Upload your Certificate. File format: PDF or
+                                            JPG
+                                            Max file size 5 MB
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                                <div class="row">
+                                    <div class="col-12">
+
+                                        <div class="form-outline mb-4">
+                                            <input type="text" id="form3Example8"
+                                                class="form-control form-control-lg" />
+                                            <label class="form-label" for="form3Example8">Extra Curricular
+                                                Activity</label>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 mb-4 pb-2">
+
+                                    <input class="form-control form-control-lg" id="formFileLg" type="file" />
+                                    <div class="small text-muted mt-2">Upload your latest Resume. <br>
+                                        <ul>
+                                            <li>File format: PDF or Docx</li>
+                                            <li>Max file size 10 MB</li>
+                                            <li>Applicant must enclose his/her Photograph with Resume</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+
+
+
+                                <!--Terms and Conditions-->
+                                <div class="form-check form-check-inline mb-2">
+                                    <input class="form-check-input" type="checkbox" name="inlineRadioOptions"
+                                        id="femaleGender" value="option1" />
+                                    <label class="form-check-label" for="femaleGender">I hereby confirm that all the
+                                        information provided in this form is true.</label>
+                                </div>
+                                <div class="form-check form-check-inline mb-4">
+                                    <input class="form-check-input" type="checkbox" name="inlineRadioOptions"
+                                        id="femaleGender" value="option1" />
+                                    <label class="form-check-label" for="femaleGender">I also understand that providing
+                                        false information is an offence that can lead to disciplinary actions.</label>
+                                </div>
+
+
+                                <!--SUBMIT BUTTON-->
+                                <div class="d-grid gap-2">
+                                    <input class="btn btn-primary btn-lg btn-warning" type="submit" value="Submit" />
+                                </div>
+
+
+
+                        </div>
+
+                    </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-dark text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <!-- Section: Form -->
+            <section class="">
+                <form action="">
+                    <!--Grid row-->
+                    <div class="row d-flex justify-content-center">
+                        <!--Grid column-->
+                        <div class="col-auto">
+                            <p class="pt-2">
+                                <strong>Sign up for our newsletter</strong>
+                            </p>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-md-5 col-12">
+                            <!-- Email input -->
+                            <div class="form-outline form-white mb-4">
+                                <input type="email" id="form5Example29" class="form-control" />
+                                <label class="form-label" for="form5Example29">Email address</label>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-auto">
+                            <!-- Submit button -->
+                            <button type="submit" class="btn btn-outline-warning mb-4">
+                                Subscribe
+                            </button>
+                        </div>
+                        <!--Grid column-->
+                    </div>
+                    <!--Grid row-->
+                </form>
+            </section>
+            <!-- Section: Form -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2023 Copyright:
+            <a class="text-white" href="#">Mushfiq Qayyum</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
